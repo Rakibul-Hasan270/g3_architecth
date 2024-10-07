@@ -1,0 +1,386 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Lexend", system-ui;
+    font-optical-sizing: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+nav>h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav>ul>li>a {
+    font-size: 1.5rem;
+}
+
+
+/* Closed Nav-----------------  */
+/* Start Banner------------------ */
+
+.banner {
+    margin-bottom: 50px;
+}
+
+.banner h3 {
+    font-size: 3rem;
+    font-weight: bolder;
+    /* width: 400px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background-color: coral;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid coral;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: none;
+    color: coral;
+    border: 1px solid coral;
+}
+
+.mx {
+    /* width: 100%; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Closed Banner-----------------  */
+/* Start grid-team------------------ */
+
+
+.grid-team {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.left-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.left-team>img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-team {
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.right-team>h3 {
+    font-size: 2rem;
+}
+
+.list {
+    color: gray;
+    font-weight: 500;
+}
+
+.our {
+    font-weight: bolder;
+}
+
+.featurs {
+    color: coral;
+}
+
+/* Closed grid-team-----------------  */
+/* Start flex-content------------------ */
+
+.flex-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+
+/* .flex-left>h3 {
+    font-size: 2.5rem;
+    border-left: 4px solid coral;
+    padding-left: 25px;
+} */
+
+.flex-left-content-respon>h3 {
+    font-size: 2.5rem;
+    border-left: 4px solid coral;
+    padding-left: 25px;
+}
+
+.flex-left-content {
+    /* background-color: aliceblue; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 1px 1px coral;
+}
+
+.flex-left-content>h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.flex-right-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-right {
+    position: relative;
+}
+
+.absulate {
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 83%;
+    left: -14%;
+}
+
+
+/* Closed flex-content----------------*/
+/* Start facts------------------ */
+
+
+.facts {
+    margin-bottom: 50px;
+}
+
+.facts>h3 {
+    font-size: 2rem;
+}
+
+.facts-cmn {
+    width: 900px;
+}
+
+.facts-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.img-con {
+    text-align: center;
+    border: 2px solid coral;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Closed facts----------------*/
+/* Start sponspors------------------ */
+
+
+.sponspors {
+    margin-top: 90px;
+}
+
+.sponspors-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sponspors-dis {
+    /* width: 75%; */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sponspors-icon {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+/* Closed sponspors----------------*/
+/* Start footer------------------ */
+
+.footer {
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.footer-title {
+    padding: 40px 25px;
+    text-align: center  ;
+}
+
+
+@media screen and (max-width : 576px) {
+    body {
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: -28px;
+    }
+
+    ul {
+        /* flex-direction: column;
+        padding: 15px; */
+        display: none;
+    }
+
+    .banner p {
+        width: auto;
+    }
+
+    .grid-team {
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+
+    .left-team {
+        grid-template-columns: 1fr;
+    }
+
+    .right-team {
+        width: auto;
+        padding: 15px;
+        margin-top: -50px;
+    }
+
+    .flex-content {
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        width: 96%;
+        padding: 15px;
+    }
+
+    .facts {
+        margin-bottom: 20px;
+    }
+
+    .absulate {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        top: 83%;
+        left: 31%;
+    }
+
+    .facts-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .facts-cmn {
+        width: auto;
+    }
+
+    .sponspors-icon {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sponspors {
+        margin-top: 40px;
+    }
+
+    .sponspors-icon>div {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .grid-team {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+
+
+    .flex-content {
+        flex-direction: column-reverse;
+    }
+
+    .main {
+        width: 96%;
+        padding: 15px;
+    }
+
+    .absulate {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        top: 83%;
+        left: 36%;
+    }
+
+    .facts-cmn {
+        width: auto;
+    }
+
+    .facts {
+        padding: 15px;
+    }
+
+}
